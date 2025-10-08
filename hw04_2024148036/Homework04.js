@@ -6,7 +6,6 @@ const canvas = document.getElementById('glCanvas');
 const gl = canvas.getContext('webgl2');
 let shader;
 let vao;
-let axes;
 let startTime = 0;
 let vbo_column, vbo_bigBlade, vbo_smallBlade1, vbo_smallBlade2;
 
