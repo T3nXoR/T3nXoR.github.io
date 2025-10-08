@@ -115,9 +115,7 @@ function render() {
     const colorLoc = gl.getUniformLocation(shader.program, "v_color");
     
     gl.clear(gl.COLOR_BUFFER_BIT);
-
-    // draw axes
-    axes.draw(mat4.create(), mat4.create()); 
+    
     shader.use(); 
     gl.bindVertexArray(vao);
     
@@ -179,7 +177,6 @@ async function main() {
         }
 
         await initShader();
-        axes = new Axes(gl, 0.8); 
         setupBuffers();
 
         return true;
